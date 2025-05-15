@@ -1,0 +1,18 @@
+  - If you have a `netlify.toml` file in the root of your repository, add or modify the `[build]` section to include the `NODE_VERSION`:
+
+    ```toml
+    [build]
+      environment = { NODE_VERSION = "20.11.1" }
+      command = "npm ci && expo build:web" # Or your build command
+      publish = "web-build" # Or your publish directory
+    ```
+
+    - **Explanation:**
+      - `[build]`: This section configures the build settings.
+      - `environment = { NODE_VERSION = "20.11.1" }`: This explicitly sets the Node.js version for the build environment to `20.11.1`.
+      - `command`: Replace `"npm ci && expo build:web"` with your actual build command.
+      - `publish`: Replace `"web-build"` with your actual publish directory.
+
+  - **Commit and push the `netlify.toml` file to your repository.** Netlify will automatically pick up this configuration on the next build.
+b) Using Environment Variables in Netlify UI:
+
