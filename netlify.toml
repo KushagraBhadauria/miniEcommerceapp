@@ -1,4 +1,5 @@
 [build]
   environment = { NODE_VERSION = "20.11.1" } # Keep your Node version
   command = "npm ci && npm run web-build"
-  publish = "web-build" # Default output of expo export:web
+  publish = "web-build"
+
