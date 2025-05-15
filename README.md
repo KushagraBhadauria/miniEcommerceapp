@@ -13,7 +13,7 @@ This is an Expo project created with `create-expo-app`
 2. Start the app
 
    ```bash
-   npx  start
+   npm  start
    ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
