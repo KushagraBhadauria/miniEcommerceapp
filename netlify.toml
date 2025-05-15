@@ -1,4 +1,4 @@
 [build]
-  environment = { NODE_VERSION = "20.11.1" }
-  command = "npm ci && expo build:web" # Replace with your actual build command
-  publish = "web-build" # Replace with your actual publish directory
+  environment = { NODE_VERSION = "20.11.1" } # Keep your Node version setting
+  command = "npm ci && npm run web-build"  # Assuming you have a "web-build" script
+  publish = "web-build" # Adjust this to the actual output directory of your web build
